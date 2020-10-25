@@ -1,0 +1,1087 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MySQLDataModel.Store" Alias="Self" Provider="MySql.Data.MySqlClient" ProviderManifestToken="5.5" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/02/edm/ssdl">
+  <EntityContainer Name="MySQLDataModelStoreContainer">
+    <EntitySet Name="tbl_admin" EntityType="MySQLDataModel.Store.tbl_admin" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_ayar" EntityType="MySQLDataModel.Store.tbl_ayar" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_dil" EntityType="MySQLDataModel.Store.tbl_dil" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_foto_galeri" EntityType="MySQLDataModel.Store.tbl_foto_galeri" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_foto_galeri_detay" EntityType="MySQLDataModel.Store.tbl_foto_galeri_detay" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_gelen_mail" EntityType="MySQLDataModel.Store.tbl_gelen_mail" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_haber" EntityType="MySQLDataModel.Store.tbl_haber" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_haber_detay" EntityType="MySQLDataModel.Store.tbl_haber_detay" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_maillist_gonderilen" EntityType="MySQLDataModel.Store.tbl_maillist_gonderilen" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_maillist_mail" EntityType="MySQLDataModel.Store.tbl_maillist_mail" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_maillist_taslak" EntityType="MySQLDataModel.Store.tbl_maillist_taslak" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_manset" EntityType="MySQLDataModel.Store.tbl_manset" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_manset_detay" EntityType="MySQLDataModel.Store.tbl_manset_detay" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_menu" EntityType="MySQLDataModel.Store.tbl_menu" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_menu_detay" EntityType="MySQLDataModel.Store.tbl_menu_detay" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_resimler" EntityType="MySQLDataModel.Store.tbl_resimler" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_text" EntityType="MySQLDataModel.Store.tbl_text" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_text_detay" EntityType="MySQLDataModel.Store.tbl_text_detay" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_video_galeri" EntityType="MySQLDataModel.Store.tbl_video_galeri" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_video_galeri_detay" EntityType="MySQLDataModel.Store.tbl_video_galeri_detay" store:Type="Tables" Schema="rodanit_com" />
+    <EntitySet Name="tbl_videolar" EntityType="MySQLDataModel.Store.tbl_videolar" store:Type="Tables" Schema="rodanit_com" />
+    <AssociationSet Name="fk_admin_admin_id_ek" Association="MySQLDataModel.Store.fk_admin_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_admin1" EntitySet="tbl_admin" />
+    </AssociationSet>
+    <AssociationSet Name="fk_admin_admin_id_gun" Association="MySQLDataModel.Store.fk_admin_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_admin1" EntitySet="tbl_admin" />
+    </AssociationSet>
+    <AssociationSet Name="fk_ayar_admin_id_gun" Association="MySQLDataModel.Store.fk_ayar_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_ayar" EntitySet="tbl_ayar" />
+    </AssociationSet>
+    <AssociationSet Name="fk_dil_admin_id_ek" Association="MySQLDataModel.Store.fk_dil_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+    </AssociationSet>
+    <AssociationSet Name="fk_dil_admin_id_gun" Association="MySQLDataModel.Store.fk_dil_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+    </AssociationSet>
+    <AssociationSet Name="fk_foto_galeri_admin_id_ek" Association="MySQLDataModel.Store.fk_foto_galeri_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_foto_galeri" EntitySet="tbl_foto_galeri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_foto_galeri_admin_id_gun" Association="MySQLDataModel.Store.fk_foto_galeri_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_foto_galeri" EntitySet="tbl_foto_galeri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_foto_galeri_detay_dil_id" Association="MySQLDataModel.Store.fk_foto_galeri_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_foto_galeri_detay" EntitySet="tbl_foto_galeri_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_foto_galeri_detay_galeri_id" Association="MySQLDataModel.Store.fk_foto_galeri_detay_galeri_id">
+      <End Role="tbl_foto_galeri" EntitySet="tbl_foto_galeri" />
+      <End Role="tbl_foto_galeri_detay" EntitySet="tbl_foto_galeri_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_haber_admin_id_ek" Association="MySQLDataModel.Store.fk_haber_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_haber" EntitySet="tbl_haber" />
+    </AssociationSet>
+    <AssociationSet Name="fk_haber_admin_id_gun" Association="MySQLDataModel.Store.fk_haber_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_haber" EntitySet="tbl_haber" />
+    </AssociationSet>
+    <AssociationSet Name="fk_haber_detay_dil_id" Association="MySQLDataModel.Store.fk_haber_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_haber_detay" EntitySet="tbl_haber_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_haber_detay_haber_id" Association="MySQLDataModel.Store.fk_haber_detay_haber_id">
+      <End Role="tbl_haber" EntitySet="tbl_haber" />
+      <End Role="tbl_haber_detay" EntitySet="tbl_haber_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_gonderilen_admin_id" Association="MySQLDataModel.Store.fk_maillist_gonderilen_admin_id">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_gonderilen" EntitySet="tbl_maillist_gonderilen" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_gonderilen_mail_id" Association="MySQLDataModel.Store.fk_maillist_gonderilen_mail_id">
+      <End Role="tbl_maillist_mail" EntitySet="tbl_maillist_mail" />
+      <End Role="tbl_maillist_gonderilen" EntitySet="tbl_maillist_gonderilen" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_gonderilen_taslak_id" Association="MySQLDataModel.Store.fk_maillist_gonderilen_taslak_id">
+      <End Role="tbl_maillist_taslak" EntitySet="tbl_maillist_taslak" />
+      <End Role="tbl_maillist_gonderilen" EntitySet="tbl_maillist_gonderilen" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_mail_admin_id_ek" Association="MySQLDataModel.Store.fk_maillist_mail_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_mail" EntitySet="tbl_maillist_mail" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_mail_admin_id_gun" Association="MySQLDataModel.Store.fk_maillist_mail_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_mail" EntitySet="tbl_maillist_mail" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_taslak_admin_id_ek" Association="MySQLDataModel.Store.fk_maillist_taslak_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_taslak" EntitySet="tbl_maillist_taslak" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_taslak_admin_id_gun" Association="MySQLDataModel.Store.fk_maillist_taslak_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_taslak" EntitySet="tbl_maillist_taslak" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_admin_id_ek" Association="MySQLDataModel.Store.fk_manset_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_manset" EntitySet="tbl_manset" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_admin_id_gun" Association="MySQLDataModel.Store.fk_manset_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_manset" EntitySet="tbl_manset" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_detay_admin_id" Association="MySQLDataModel.Store.fk_manset_detay_admin_id">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_manset_detay" EntitySet="tbl_manset_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_detay_dil_id" Association="MySQLDataModel.Store.fk_manset_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_manset_detay" EntitySet="tbl_manset_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_detay_manset_id" Association="MySQLDataModel.Store.fk_manset_detay_manset_id">
+      <End Role="tbl_manset" EntitySet="tbl_manset" />
+      <End Role="tbl_manset_detay" EntitySet="tbl_manset_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_admin_id_ek" Association="MySQLDataModel.Store.fk_menu_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_menu" EntitySet="tbl_menu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_admin_id_gun" Association="MySQLDataModel.Store.fk_menu_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_menu" EntitySet="tbl_menu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_detay_dil_id" Association="MySQLDataModel.Store.fk_menu_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_menu_detay" EntitySet="tbl_menu_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_detay_menu_id" Association="MySQLDataModel.Store.fk_menu_detay_menu_id">
+      <End Role="tbl_menu" EntitySet="tbl_menu" />
+      <End Role="tbl_menu_detay" EntitySet="tbl_menu_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_foto_galeri_id" Association="MySQLDataModel.Store.fk_menu_foto_galeri_id">
+      <End Role="tbl_foto_galeri" EntitySet="tbl_foto_galeri" />
+      <End Role="tbl_menu" EntitySet="tbl_menu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_resimler_admin_id_ek" Association="MySQLDataModel.Store.fk_resimler_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_resimler" EntitySet="tbl_resimler" />
+    </AssociationSet>
+    <AssociationSet Name="fk_resimler_admin_id_gun" Association="MySQLDataModel.Store.fk_resimler_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_resimler" EntitySet="tbl_resimler" />
+    </AssociationSet>
+    <AssociationSet Name="fk_text_admin_id" Association="MySQLDataModel.Store.fk_text_admin_id">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_text" EntitySet="tbl_text" />
+    </AssociationSet>
+    <AssociationSet Name="fk_text_detay_dil_id" Association="MySQLDataModel.Store.fk_text_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_text_detay" EntitySet="tbl_text_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_text_detay_text_id" Association="MySQLDataModel.Store.fk_text_detay_text_id">
+      <End Role="tbl_text" EntitySet="tbl_text" />
+      <End Role="tbl_text_detay" EntitySet="tbl_text_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_video_galeri_admin_id_ek" Association="MySQLDataModel.Store.fk_video_galeri_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_video_galeri" EntitySet="tbl_video_galeri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_video_galeri_admin_id_gun" Association="MySQLDataModel.Store.fk_video_galeri_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_video_galeri" EntitySet="tbl_video_galeri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_video_galeri_detay_dil_id" Association="MySQLDataModel.Store.fk_video_galeri_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_video_galeri_detay" EntitySet="tbl_video_galeri_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_video_galeri_detay_video_galeri_id" Association="MySQLDataModel.Store.fk_video_galeri_detay_video_galeri_id">
+      <End Role="tbl_video_galeri" EntitySet="tbl_video_galeri" />
+      <End Role="tbl_video_galeri_detay" EntitySet="tbl_video_galeri_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_videolar_admin_id_ek" Association="MySQLDataModel.Store.fk_videolar_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_videolar" EntitySet="tbl_videolar" />
+    </AssociationSet>
+    <AssociationSet Name="fk_videolar_admin_id_gun" Association="MySQLDataModel.Store.fk_videolar_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_videolar" EntitySet="tbl_videolar" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tbl_admin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="soyad" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="sifre" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="mail" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="son_giris" Type="datetime" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_ayar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="domain" Type="varchar" MaxLength="255" />
+    <Property Name="marka" Type="varchar" MaxLength="255" />
+    <Property Name="sirket_unvan" Type="varchar" MaxLength="255" />
+    <Property Name="yetkili" Type="varchar" MaxLength="255" />
+    <Property Name="telefon" Type="varchar" MaxLength="255" />
+    <Property Name="faks" Type="varchar" MaxLength="255" />
+    <Property Name="adres" Type="varchar" MaxLength="255" />
+    <Property Name="gsm" Type="varchar" MaxLength="255" />
+    <Property Name="mail" Type="varchar" MaxLength="255" />
+    <Property Name="seo_baslik" Type="varchar" MaxLength="255" />
+    <Property Name="seo_aciklama" Type="varchar" MaxLength="255" />
+    <Property Name="seo_anahtar" Type="varchar" MaxLength="255" />
+    <Property Name="smtp" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="smtp_mail" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="smtp_sifre" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="smtp_port" Type="int" Nullable="false" />
+    <Property Name="varsayilan_dil" Type="int" />
+    <Property Name="guvenlik_kodu" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="facebook" Type="varchar" MaxLength="255" />
+    <Property Name="twitter" Type="varchar" MaxLength="255" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_dil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dil" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="dil_kodu" Type="varchar" MaxLength="255" />
+    <Property Name="dosya_ad" Type="varchar" MaxLength="255" />
+    <Property Name="kodlama" Type="varchar" MaxLength="255" />
+    <Property Name="culture" Type="varchar" MaxLength="255" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_foto_galeri">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="varchar" MaxLength="255" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_foto_galeri_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="galeri_id" Type="int" />
+    <Property Name="dil_id" Type="int" />
+    <Property Name="baslik" Type="varchar" MaxLength="255" />
+    <Property Name="seo_aciklama" Type="text" />
+    <Property Name="seo_anahtar" Type="text" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_gelen_mail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tur" Type="varchar" MaxLength="255" />
+    <Property Name="ad_soyad" Type="varchar" MaxLength="255" />
+    <Property Name="mail" Type="varchar" MaxLength="255" />
+    <Property Name="telefon" Type="varchar" MaxLength="255" />
+    <Property Name="mesaj" Type="text" />
+    <Property Name="ip" Type="varchar" MaxLength="255" />
+    <Property Name="tarih_ek" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_haber">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="varchar" MaxLength="500" />
+    <Property Name="dosya_ad" Type="varchar" MaxLength="255" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_haber_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dil_id" Type="int" Nullable="false" />
+    <Property Name="haber_id" Type="int" Nullable="false" />
+    <Property Name="baslik" Type="varchar" MaxLength="500" />
+    <Property Name="ozet" Type="text" />
+    <Property Name="detay" Type="text" />
+    <Property Name="seo_anahtar" Type="text" />
+    <Property Name="seo_aciklama" Type="text" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_maillist_gonderilen">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="taslak_id" Type="int" />
+    <Property Name="mail_id" Type="int" />
+    <Property Name="admin_id" Type="int" />
+    <Property Name="tarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_maillist_mail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ad" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="mail" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="tip" Type="int" Nullable="false" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_maillist_taslak">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="varchar" MaxLength="255" />
+    <Property Name="mail" Type="text" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_manset">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="dosya_ad" Type="varchar" MaxLength="255" />
+    <Property Name="son_gosterim_tarih" Type="date" />
+    <Property Name="url" Type="varchar" MaxLength="500" />
+    <Property Name="sira" Type="int" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_manset_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="manset_id" Type="int" Nullable="false" />
+    <Property Name="dil_id" Type="int" Nullable="false" />
+    <Property Name="baslik" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="url" Type="varchar" MaxLength="500" />
+    <Property Name="onay" Type="bool" />
+    <Property Name="admin_id" Type="int" />
+    <Property Name="tarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_menu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="ust_menu_id" Type="int" Nullable="false" />
+    <Property Name="baslik" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="tur" Type="int" Nullable="false" />
+    <Property Name="url" Type="varchar" MaxLength="255" />
+    <Property Name="sira" Type="int" Nullable="false" />
+    <Property Name="acilan_menu" Type="bool" Nullable="false" />
+    <Property Name="foto_galeri_id" Type="int" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_menu_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="menu_id" Type="int" Nullable="false" />
+    <Property Name="dil_id" Type="int" Nullable="false" />
+    <Property Name="baslik" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="detay" Type="text" />
+    <Property Name="seo_aciklama" Type="text" />
+    <Property Name="seo_anahtar" Type="text" />
+    <Property Name="tarih_ek" Type="datetime" Nullable="false" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_resimler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tip_id" Type="int" Nullable="false" />
+    <Property Name="tip" Type="int" Nullable="false" />
+    <Property Name="dosya_ad" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="varsayilan" Type="bool" Nullable="false" />
+    <Property Name="resim_tip" Type="int" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_text">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="varchar" Nullable="false" MaxLength="255" />
+    <Property Name="sayfa" Type="varchar" MaxLength="255" />
+    <Property Name="xml" Type="bool" Nullable="false" />
+    <Property Name="admin_id" Type="int" />
+    <Property Name="tarih" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_text_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="dil_id" Type="int" Nullable="false" />
+    <Property Name="text_id" Type="int" Nullable="false" />
+    <Property Name="baslik" Type="text" />
+  </EntityType>
+  <EntityType Name="tbl_video_galeri">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="baslik" Type="varchar" MaxLength="255" />
+    <Property Name="dosya_ad" Type="varchar" MaxLength="255" />
+    <Property Name="video" Type="varchar" MaxLength="500" />
+    <Property Name="onay" Type="bool" Nullable="false" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_video_galeri_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="video_galeri_id" Type="int" />
+    <Property Name="dil_id" Type="int" />
+    <Property Name="baslik" Type="varchar" MaxLength="255" />
+    <Property Name="seo_anahtar" Type="text" />
+    <Property Name="seo_aciklama" Type="text" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <EntityType Name="tbl_videolar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="tip_id" Type="int" />
+    <Property Name="tip" Type="int" />
+    <Property Name="site" Type="text" />
+    <Property Name="url" Type="text" />
+    <Property Name="onay" Type="bool" />
+    <Property Name="admin_id_ek" Type="int" />
+    <Property Name="tarih_ek" Type="datetime" />
+    <Property Name="admin_id_gun" Type="int" />
+    <Property Name="tarih_gun" Type="datetime" />
+  </EntityType>
+  <Association Name="fk_admin_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_admin1" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_admin1">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_admin_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_admin1" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_admin1">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_ayar_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_ayar" Type="MySQLDataModel.Store.tbl_ayar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_ayar">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_dil_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_dil" Type="MySQLDataModel.Store.tbl_dil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_dil">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_dil_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_dil" Type="MySQLDataModel.Store.tbl_dil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_dil">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_foto_galeri_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_foto_galeri" Type="MySQLDataModel.Store.tbl_foto_galeri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_foto_galeri">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_foto_galeri_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_foto_galeri" Type="MySQLDataModel.Store.tbl_foto_galeri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_foto_galeri">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_foto_galeri_detay_dil_id">
+    <End Role="tbl_dil" Type="MySQLDataModel.Store.tbl_dil" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_foto_galeri_detay" Type="MySQLDataModel.Store.tbl_foto_galeri_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_foto_galeri_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_foto_galeri_detay_galeri_id">
+    <End Role="tbl_foto_galeri" Type="MySQLDataModel.Store.tbl_foto_galeri" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_foto_galeri_detay" Type="MySQLDataModel.Store.tbl_foto_galeri_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_foto_galeri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_foto_galeri_detay">
+        <PropertyRef Name="galeri_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_haber_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_haber" Type="MySQLDataModel.Store.tbl_haber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_haber">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_haber_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_haber" Type="MySQLDataModel.Store.tbl_haber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_haber">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_haber_detay_dil_id">
+    <End Role="tbl_dil" Type="MySQLDataModel.Store.tbl_dil" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_haber_detay" Type="MySQLDataModel.Store.tbl_haber_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_haber_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_haber_detay_haber_id">
+    <End Role="tbl_haber" Type="MySQLDataModel.Store.tbl_haber" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_haber_detay" Type="MySQLDataModel.Store.tbl_haber_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_haber">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_haber_detay">
+        <PropertyRef Name="haber_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_gonderilen_admin_id">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_maillist_gonderilen" Type="MySQLDataModel.Store.tbl_maillist_gonderilen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_gonderilen">
+        <PropertyRef Name="admin_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_gonderilen_mail_id">
+    <End Role="tbl_maillist_mail" Type="MySQLDataModel.Store.tbl_maillist_mail" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_maillist_gonderilen" Type="MySQLDataModel.Store.tbl_maillist_gonderilen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_maillist_mail">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_gonderilen">
+        <PropertyRef Name="mail_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_gonderilen_taslak_id">
+    <End Role="tbl_maillist_taslak" Type="MySQLDataModel.Store.tbl_maillist_taslak" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_maillist_gonderilen" Type="MySQLDataModel.Store.tbl_maillist_gonderilen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_maillist_taslak">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_gonderilen">
+        <PropertyRef Name="taslak_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_mail_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_maillist_mail" Type="MySQLDataModel.Store.tbl_maillist_mail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_mail">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_mail_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_maillist_mail" Type="MySQLDataModel.Store.tbl_maillist_mail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_mail">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_taslak_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_maillist_taslak" Type="MySQLDataModel.Store.tbl_maillist_taslak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_taslak">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_taslak_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_maillist_taslak" Type="MySQLDataModel.Store.tbl_maillist_taslak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_taslak">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_manset" Type="MySQLDataModel.Store.tbl_manset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_manset" Type="MySQLDataModel.Store.tbl_manset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_detay_admin_id">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_manset_detay" Type="MySQLDataModel.Store.tbl_manset_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset_detay">
+        <PropertyRef Name="admin_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_detay_dil_id">
+    <End Role="tbl_dil" Type="MySQLDataModel.Store.tbl_dil" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_manset_detay" Type="MySQLDataModel.Store.tbl_manset_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_detay_manset_id">
+    <End Role="tbl_manset" Type="MySQLDataModel.Store.tbl_manset" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_manset_detay" Type="MySQLDataModel.Store.tbl_manset_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_manset">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset_detay">
+        <PropertyRef Name="manset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_menu" Type="MySQLDataModel.Store.tbl_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_menu" Type="MySQLDataModel.Store.tbl_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_detay_dil_id">
+    <End Role="tbl_dil" Type="MySQLDataModel.Store.tbl_dil" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_menu_detay" Type="MySQLDataModel.Store.tbl_menu_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_detay_menu_id">
+    <End Role="tbl_menu" Type="MySQLDataModel.Store.tbl_menu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_menu_detay" Type="MySQLDataModel.Store.tbl_menu_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_menu">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu_detay">
+        <PropertyRef Name="menu_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_foto_galeri_id">
+    <End Role="tbl_foto_galeri" Type="MySQLDataModel.Store.tbl_foto_galeri" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_menu" Type="MySQLDataModel.Store.tbl_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_foto_galeri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu">
+        <PropertyRef Name="foto_galeri_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_resimler_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_resimler" Type="MySQLDataModel.Store.tbl_resimler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_resimler">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_resimler_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_resimler" Type="MySQLDataModel.Store.tbl_resimler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_resimler">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_text_admin_id">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_text" Type="MySQLDataModel.Store.tbl_text" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_text">
+        <PropertyRef Name="admin_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_text_detay_dil_id">
+    <End Role="tbl_dil" Type="MySQLDataModel.Store.tbl_dil" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_text_detay" Type="MySQLDataModel.Store.tbl_text_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_text_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_text_detay_text_id">
+    <End Role="tbl_text" Type="MySQLDataModel.Store.tbl_text" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_text_detay" Type="MySQLDataModel.Store.tbl_text_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_text">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_text_detay">
+        <PropertyRef Name="text_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_video_galeri_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_video_galeri" Type="MySQLDataModel.Store.tbl_video_galeri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_video_galeri">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_video_galeri_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_video_galeri" Type="MySQLDataModel.Store.tbl_video_galeri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_video_galeri">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_video_galeri_detay_dil_id">
+    <End Role="tbl_dil" Type="MySQLDataModel.Store.tbl_dil" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_video_galeri_detay" Type="MySQLDataModel.Store.tbl_video_galeri_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_video_galeri_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_video_galeri_detay_video_galeri_id">
+    <End Role="tbl_video_galeri" Type="MySQLDataModel.Store.tbl_video_galeri" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_video_galeri_detay" Type="MySQLDataModel.Store.tbl_video_galeri_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_video_galeri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_video_galeri_detay">
+        <PropertyRef Name="video_galeri_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_videolar_admin_id_ek">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_videolar" Type="MySQLDataModel.Store.tbl_videolar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_videolar">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_videolar_admin_id_gun">
+    <End Role="tbl_admin" Type="MySQLDataModel.Store.tbl_admin" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="tbl_videolar" Type="MySQLDataModel.Store.tbl_videolar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_videolar">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Function Name="elmah_GetErrorsXml" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="rodanit_com">
+    <Parameter Name="App" Type="varchar" Mode="In" />
+    <Parameter Name="PageIndex" Type="int" Mode="In" />
+    <Parameter Name="PageSize" Type="int" Mode="In" />
+    <Parameter Name="TotalCount" Type="int" Mode="Out" />
+  </Function>
+  <Function Name="elmah_GetErrorXml" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="rodanit_com">
+    <Parameter Name="Id" Type="char" Mode="In" />
+    <Parameter Name="App" Type="varchar" Mode="In" />
+  </Function>
+  <Function Name="elmah_LogError" Aggregate="false" BuiltIn="false" NiladicFunction="false" IsComposable="false" ParameterTypeSemantics="AllowImplicitConversion" Schema="rodanit_com">
+    <Parameter Name="ErrorId" Type="char" Mode="In" />
+    <Parameter Name="Application" Type="varchar" Mode="In" />
+    <Parameter Name="Host" Type="varchar" Mode="In" />
+    <Parameter Name="Type" Type="varchar" Mode="In" />
+    <Parameter Name="Source" Type="varchar" Mode="In" />
+    <Parameter Name="Message" Type="varchar" Mode="In" />
+    <Parameter Name="User" Type="varchar" Mode="In" />
+    <Parameter Name="AllXml" Type="text" Mode="In" />
+    <Parameter Name="StatusCode" Type="int" Mode="In" />
+    <Parameter Name="TimeUtc" Type="datetime" Mode="In" />
+  </Function>
+</Schema>

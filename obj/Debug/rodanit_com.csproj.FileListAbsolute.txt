@@ -1,0 +1,15 @@
+D:\Inetpub\müşteri\rodanit_com\bin\rodanit_com.dll
+D:\Inetpub\müşteri\rodanit_com\bin\rodanit_com.pdb
+D:\Inetpub\müşteri\rodanit_com\bin\CKEditor.NET.dll
+D:\Inetpub\müşteri\rodanit_com\bin\Elmah.dll
+D:\Inetpub\müşteri\rodanit_com\bin\EntityFramework.dll
+D:\Inetpub\müşteri\rodanit_com\bin\EntityFramework.SqlServer.dll
+D:\Inetpub\müşteri\rodanit_com\bin\MySql.Data.dll
+D:\Inetpub\müşteri\rodanit_com\bin\MySql.Data.Entity.dll
+D:\Inetpub\müşteri\rodanit_com\bin\Recaptcha.dll
+D:\Inetpub\müşteri\rodanit_com\bin\EntityFramework.xml
+D:\Inetpub\müşteri\rodanit_com\bin\EntityFramework.SqlServer.xml
+D:\Inetpub\müşteri\rodanit_com\bin\Recaptcha.pdb
+D:\Inetpub\müşteri\rodanit_com\obj\Debug\rodanit_com.dll
+D:\Inetpub\müşteri\rodanit_com\obj\Debug\rodanit_com.pdb
+D:\Inetpub\müşteri\rodanit_com\obj\Debug\rodanit_com.csprojResolveAssemblyReference.cache

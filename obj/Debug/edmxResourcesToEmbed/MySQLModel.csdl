@@ -1,0 +1,1065 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MySQLDataModel" Alias="Self" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+  <EntityContainer Name="BaglantiCumlesi" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tbl_admin" EntityType="MySQLDataModel.tbl_admin" />
+    <EntitySet Name="tbl_ayar" EntityType="MySQLDataModel.tbl_ayar" />
+    <EntitySet Name="tbl_dil" EntityType="MySQLDataModel.tbl_dil" />
+    <EntitySet Name="tbl_foto_galeri" EntityType="MySQLDataModel.tbl_foto_galeri" />
+    <EntitySet Name="tbl_foto_galeri_detay" EntityType="MySQLDataModel.tbl_foto_galeri_detay" />
+    <EntitySet Name="tbl_gelen_mail" EntityType="MySQLDataModel.tbl_gelen_mail" />
+    <EntitySet Name="tbl_haber" EntityType="MySQLDataModel.tbl_haber" />
+    <EntitySet Name="tbl_haber_detay" EntityType="MySQLDataModel.tbl_haber_detay" />
+    <EntitySet Name="tbl_maillist_gonderilen" EntityType="MySQLDataModel.tbl_maillist_gonderilen" />
+    <EntitySet Name="tbl_maillist_mail" EntityType="MySQLDataModel.tbl_maillist_mail" />
+    <EntitySet Name="tbl_maillist_taslak" EntityType="MySQLDataModel.tbl_maillist_taslak" />
+    <EntitySet Name="tbl_manset" EntityType="MySQLDataModel.tbl_manset" />
+    <EntitySet Name="tbl_manset_detay" EntityType="MySQLDataModel.tbl_manset_detay" />
+    <EntitySet Name="tbl_menu" EntityType="MySQLDataModel.tbl_menu" />
+    <EntitySet Name="tbl_menu_detay" EntityType="MySQLDataModel.tbl_menu_detay" />
+    <EntitySet Name="tbl_resimler" EntityType="MySQLDataModel.tbl_resimler" />
+    <EntitySet Name="tbl_text" EntityType="MySQLDataModel.tbl_text" />
+    <EntitySet Name="tbl_text_detay" EntityType="MySQLDataModel.tbl_text_detay" />
+    <EntitySet Name="tbl_video_galeri" EntityType="MySQLDataModel.tbl_video_galeri" />
+    <EntitySet Name="tbl_video_galeri_detay" EntityType="MySQLDataModel.tbl_video_galeri_detay" />
+    <EntitySet Name="tbl_videolar" EntityType="MySQLDataModel.tbl_videolar" />
+    <AssociationSet Name="fk_admin_admin_id_ek" Association="MySQLDataModel.fk_admin_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_admin1" EntitySet="tbl_admin" />
+    </AssociationSet>
+    <AssociationSet Name="fk_admin_admin_id_gun" Association="MySQLDataModel.fk_admin_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_admin1" EntitySet="tbl_admin" />
+    </AssociationSet>
+    <AssociationSet Name="fk_ayar_admin_id_gun" Association="MySQLDataModel.fk_ayar_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_ayar" EntitySet="tbl_ayar" />
+    </AssociationSet>
+    <AssociationSet Name="fk_dil_admin_id_ek" Association="MySQLDataModel.fk_dil_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+    </AssociationSet>
+    <AssociationSet Name="fk_dil_admin_id_gun" Association="MySQLDataModel.fk_dil_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+    </AssociationSet>
+    <AssociationSet Name="fk_foto_galeri_admin_id_ek" Association="MySQLDataModel.fk_foto_galeri_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_foto_galeri" EntitySet="tbl_foto_galeri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_foto_galeri_admin_id_gun" Association="MySQLDataModel.fk_foto_galeri_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_foto_galeri" EntitySet="tbl_foto_galeri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_haber_admin_id_ek" Association="MySQLDataModel.fk_haber_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_haber" EntitySet="tbl_haber" />
+    </AssociationSet>
+    <AssociationSet Name="fk_haber_admin_id_gun" Association="MySQLDataModel.fk_haber_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_haber" EntitySet="tbl_haber" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_gonderilen_admin_id" Association="MySQLDataModel.fk_maillist_gonderilen_admin_id">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_gonderilen" EntitySet="tbl_maillist_gonderilen" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_mail_admin_id_ek" Association="MySQLDataModel.fk_maillist_mail_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_mail" EntitySet="tbl_maillist_mail" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_mail_admin_id_gun" Association="MySQLDataModel.fk_maillist_mail_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_mail" EntitySet="tbl_maillist_mail" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_taslak_admin_id_ek" Association="MySQLDataModel.fk_maillist_taslak_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_taslak" EntitySet="tbl_maillist_taslak" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_taslak_admin_id_gun" Association="MySQLDataModel.fk_maillist_taslak_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_maillist_taslak" EntitySet="tbl_maillist_taslak" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_admin_id_ek" Association="MySQLDataModel.fk_manset_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_manset" EntitySet="tbl_manset" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_admin_id_gun" Association="MySQLDataModel.fk_manset_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_manset" EntitySet="tbl_manset" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_detay_admin_id" Association="MySQLDataModel.fk_manset_detay_admin_id">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_manset_detay" EntitySet="tbl_manset_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_admin_id_ek" Association="MySQLDataModel.fk_menu_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_menu" EntitySet="tbl_menu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_admin_id_gun" Association="MySQLDataModel.fk_menu_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_menu" EntitySet="tbl_menu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_resimler_admin_id_ek" Association="MySQLDataModel.fk_resimler_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_resimler" EntitySet="tbl_resimler" />
+    </AssociationSet>
+    <AssociationSet Name="fk_resimler_admin_id_gun" Association="MySQLDataModel.fk_resimler_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_resimler" EntitySet="tbl_resimler" />
+    </AssociationSet>
+    <AssociationSet Name="fk_text_admin_id" Association="MySQLDataModel.fk_text_admin_id">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_text" EntitySet="tbl_text" />
+    </AssociationSet>
+    <AssociationSet Name="fk_video_galeri_admin_id_ek" Association="MySQLDataModel.fk_video_galeri_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_video_galeri" EntitySet="tbl_video_galeri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_video_galeri_admin_id_gun" Association="MySQLDataModel.fk_video_galeri_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_video_galeri" EntitySet="tbl_video_galeri" />
+    </AssociationSet>
+    <AssociationSet Name="fk_videolar_admin_id_ek" Association="MySQLDataModel.fk_videolar_admin_id_ek">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_videolar" EntitySet="tbl_videolar" />
+    </AssociationSet>
+    <AssociationSet Name="fk_videolar_admin_id_gun" Association="MySQLDataModel.fk_videolar_admin_id_gun">
+      <End Role="tbl_admin" EntitySet="tbl_admin" />
+      <End Role="tbl_videolar" EntitySet="tbl_videolar" />
+    </AssociationSet>
+    <AssociationSet Name="fk_foto_galeri_detay_dil_id" Association="MySQLDataModel.fk_foto_galeri_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_foto_galeri_detay" EntitySet="tbl_foto_galeri_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_haber_detay_dil_id" Association="MySQLDataModel.fk_haber_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_haber_detay" EntitySet="tbl_haber_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_detay_dil_id" Association="MySQLDataModel.fk_manset_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_manset_detay" EntitySet="tbl_manset_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_detay_dil_id" Association="MySQLDataModel.fk_menu_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_menu_detay" EntitySet="tbl_menu_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_text_detay_dil_id" Association="MySQLDataModel.fk_text_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_text_detay" EntitySet="tbl_text_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_video_galeri_detay_dil_id" Association="MySQLDataModel.fk_video_galeri_detay_dil_id">
+      <End Role="tbl_dil" EntitySet="tbl_dil" />
+      <End Role="tbl_video_galeri_detay" EntitySet="tbl_video_galeri_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_foto_galeri_detay_galeri_id" Association="MySQLDataModel.fk_foto_galeri_detay_galeri_id">
+      <End Role="tbl_foto_galeri" EntitySet="tbl_foto_galeri" />
+      <End Role="tbl_foto_galeri_detay" EntitySet="tbl_foto_galeri_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_foto_galeri_id" Association="MySQLDataModel.fk_menu_foto_galeri_id">
+      <End Role="tbl_foto_galeri" EntitySet="tbl_foto_galeri" />
+      <End Role="tbl_menu" EntitySet="tbl_menu" />
+    </AssociationSet>
+    <AssociationSet Name="fk_haber_detay_haber_id" Association="MySQLDataModel.fk_haber_detay_haber_id">
+      <End Role="tbl_haber" EntitySet="tbl_haber" />
+      <End Role="tbl_haber_detay" EntitySet="tbl_haber_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_gonderilen_mail_id" Association="MySQLDataModel.fk_maillist_gonderilen_mail_id">
+      <End Role="tbl_maillist_mail" EntitySet="tbl_maillist_mail" />
+      <End Role="tbl_maillist_gonderilen" EntitySet="tbl_maillist_gonderilen" />
+    </AssociationSet>
+    <AssociationSet Name="fk_maillist_gonderilen_taslak_id" Association="MySQLDataModel.fk_maillist_gonderilen_taslak_id">
+      <End Role="tbl_maillist_taslak" EntitySet="tbl_maillist_taslak" />
+      <End Role="tbl_maillist_gonderilen" EntitySet="tbl_maillist_gonderilen" />
+    </AssociationSet>
+    <AssociationSet Name="fk_manset_detay_manset_id" Association="MySQLDataModel.fk_manset_detay_manset_id">
+      <End Role="tbl_manset" EntitySet="tbl_manset" />
+      <End Role="tbl_manset_detay" EntitySet="tbl_manset_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_menu_detay_menu_id" Association="MySQLDataModel.fk_menu_detay_menu_id">
+      <End Role="tbl_menu" EntitySet="tbl_menu" />
+      <End Role="tbl_menu_detay" EntitySet="tbl_menu_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_text_detay_text_id" Association="MySQLDataModel.fk_text_detay_text_id">
+      <End Role="tbl_text" EntitySet="tbl_text" />
+      <End Role="tbl_text_detay" EntitySet="tbl_text_detay" />
+    </AssociationSet>
+    <AssociationSet Name="fk_video_galeri_detay_video_galeri_id" Association="MySQLDataModel.fk_video_galeri_detay_video_galeri_id">
+      <End Role="tbl_video_galeri" EntitySet="tbl_video_galeri" />
+      <End Role="tbl_video_galeri_detay" EntitySet="tbl_video_galeri_detay" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="tbl_admin">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ad" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="soyad" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="sifre" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mail" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="son_giris" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_admin_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_admin1" />
+    <NavigationProperty Name="tbl_admin2" Relationship="MySQLDataModel.fk_admin_admin_id_ek" FromRole="tbl_admin1" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin11" Relationship="MySQLDataModel.fk_admin_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_admin1" />
+    <NavigationProperty Name="tbl_admin3" Relationship="MySQLDataModel.fk_admin_admin_id_gun" FromRole="tbl_admin1" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_ayar" Relationship="MySQLDataModel.fk_ayar_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_ayar" />
+    <NavigationProperty Name="tbl_dil" Relationship="MySQLDataModel.fk_dil_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_dil" />
+    <NavigationProperty Name="tbl_dil1" Relationship="MySQLDataModel.fk_dil_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_dil" />
+    <NavigationProperty Name="tbl_foto_galeri" Relationship="MySQLDataModel.fk_foto_galeri_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_foto_galeri" />
+    <NavigationProperty Name="tbl_foto_galeri1" Relationship="MySQLDataModel.fk_foto_galeri_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_foto_galeri" />
+    <NavigationProperty Name="tbl_haber" Relationship="MySQLDataModel.fk_haber_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_haber" />
+    <NavigationProperty Name="tbl_haber1" Relationship="MySQLDataModel.fk_haber_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_haber" />
+    <NavigationProperty Name="tbl_maillist_gonderilen" Relationship="MySQLDataModel.fk_maillist_gonderilen_admin_id" FromRole="tbl_admin" ToRole="tbl_maillist_gonderilen" />
+    <NavigationProperty Name="tbl_maillist_mail" Relationship="MySQLDataModel.fk_maillist_mail_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_maillist_mail" />
+    <NavigationProperty Name="tbl_maillist_mail1" Relationship="MySQLDataModel.fk_maillist_mail_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_maillist_mail" />
+    <NavigationProperty Name="tbl_maillist_taslak" Relationship="MySQLDataModel.fk_maillist_taslak_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_maillist_taslak" />
+    <NavigationProperty Name="tbl_maillist_taslak1" Relationship="MySQLDataModel.fk_maillist_taslak_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_maillist_taslak" />
+    <NavigationProperty Name="tbl_manset" Relationship="MySQLDataModel.fk_manset_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_manset" />
+    <NavigationProperty Name="tbl_manset1" Relationship="MySQLDataModel.fk_manset_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_manset" />
+    <NavigationProperty Name="tbl_manset_detay" Relationship="MySQLDataModel.fk_manset_detay_admin_id" FromRole="tbl_admin" ToRole="tbl_manset_detay" />
+    <NavigationProperty Name="tbl_menu" Relationship="MySQLDataModel.fk_menu_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_menu" />
+    <NavigationProperty Name="tbl_menu1" Relationship="MySQLDataModel.fk_menu_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_menu" />
+    <NavigationProperty Name="tbl_resimler" Relationship="MySQLDataModel.fk_resimler_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_resimler" />
+    <NavigationProperty Name="tbl_resimler1" Relationship="MySQLDataModel.fk_resimler_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_resimler" />
+    <NavigationProperty Name="tbl_text" Relationship="MySQLDataModel.fk_text_admin_id" FromRole="tbl_admin" ToRole="tbl_text" />
+    <NavigationProperty Name="tbl_video_galeri" Relationship="MySQLDataModel.fk_video_galeri_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_video_galeri" />
+    <NavigationProperty Name="tbl_video_galeri1" Relationship="MySQLDataModel.fk_video_galeri_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_video_galeri" />
+    <NavigationProperty Name="tbl_videolar" Relationship="MySQLDataModel.fk_videolar_admin_id_ek" FromRole="tbl_admin" ToRole="tbl_videolar" />
+    <NavigationProperty Name="tbl_videolar1" Relationship="MySQLDataModel.fk_videolar_admin_id_gun" FromRole="tbl_admin" ToRole="tbl_videolar" />
+  </EntityType>
+  <EntityType Name="tbl_ayar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="domain" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="marka" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="sirket_unvan" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="yetkili" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="telefon" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="faks" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="adres" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="gsm" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mail" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_baslik" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_aciklama" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_anahtar" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="smtp" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="smtp_mail" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="smtp_sifre" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="smtp_port" Nullable="false" />
+    <Property Type="Int32" Name="varsayilan_dil" />
+    <Property Type="String" Name="guvenlik_kodu" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="facebook" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="twitter" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_ayar_admin_id_gun" FromRole="tbl_ayar" ToRole="tbl_admin" />
+  </EntityType>
+  <EntityType Name="tbl_dil">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="dil" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="dil_kodu" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="dosya_ad" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="kodlama" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="culture" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_dil_admin_id_ek" FromRole="tbl_dil" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_dil_admin_id_gun" FromRole="tbl_dil" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_foto_galeri_detay" Relationship="MySQLDataModel.fk_foto_galeri_detay_dil_id" FromRole="tbl_dil" ToRole="tbl_foto_galeri_detay" />
+    <NavigationProperty Name="tbl_haber_detay" Relationship="MySQLDataModel.fk_haber_detay_dil_id" FromRole="tbl_dil" ToRole="tbl_haber_detay" />
+    <NavigationProperty Name="tbl_manset_detay" Relationship="MySQLDataModel.fk_manset_detay_dil_id" FromRole="tbl_dil" ToRole="tbl_manset_detay" />
+    <NavigationProperty Name="tbl_menu_detay" Relationship="MySQLDataModel.fk_menu_detay_dil_id" FromRole="tbl_dil" ToRole="tbl_menu_detay" />
+    <NavigationProperty Name="tbl_text_detay" Relationship="MySQLDataModel.fk_text_detay_dil_id" FromRole="tbl_dil" ToRole="tbl_text_detay" />
+    <NavigationProperty Name="tbl_video_galeri_detay" Relationship="MySQLDataModel.fk_video_galeri_detay_dil_id" FromRole="tbl_dil" ToRole="tbl_video_galeri_detay" />
+  </EntityType>
+  <EntityType Name="tbl_foto_galeri">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="baslik" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_foto_galeri_admin_id_ek" FromRole="tbl_foto_galeri" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_foto_galeri_admin_id_gun" FromRole="tbl_foto_galeri" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_foto_galeri_detay" Relationship="MySQLDataModel.fk_foto_galeri_detay_galeri_id" FromRole="tbl_foto_galeri" ToRole="tbl_foto_galeri_detay" />
+    <NavigationProperty Name="tbl_menu" Relationship="MySQLDataModel.fk_menu_foto_galeri_id" FromRole="tbl_foto_galeri" ToRole="tbl_menu" />
+  </EntityType>
+  <EntityType Name="tbl_foto_galeri_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="galeri_id" />
+    <Property Type="Int32" Name="dil_id" />
+    <Property Type="String" Name="baslik" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_aciklama" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_anahtar" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_dil" Relationship="MySQLDataModel.fk_foto_galeri_detay_dil_id" FromRole="tbl_foto_galeri_detay" ToRole="tbl_dil" />
+    <NavigationProperty Name="tbl_foto_galeri" Relationship="MySQLDataModel.fk_foto_galeri_detay_galeri_id" FromRole="tbl_foto_galeri_detay" ToRole="tbl_foto_galeri" />
+  </EntityType>
+  <EntityType Name="tbl_gelen_mail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="tur" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ad_soyad" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mail" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="telefon" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mesaj" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ip" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="tarih_ek" />
+  </EntityType>
+  <EntityType Name="tbl_haber">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="baslik" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="dosya_ad" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_haber_admin_id_ek" FromRole="tbl_haber" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_haber_admin_id_gun" FromRole="tbl_haber" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_haber_detay" Relationship="MySQLDataModel.fk_haber_detay_haber_id" FromRole="tbl_haber" ToRole="tbl_haber_detay" />
+  </EntityType>
+  <EntityType Name="tbl_haber_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="dil_id" Nullable="false" />
+    <Property Type="Int32" Name="haber_id" Nullable="false" />
+    <Property Type="String" Name="baslik" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="ozet" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="detay" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_anahtar" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_aciklama" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_dil" Relationship="MySQLDataModel.fk_haber_detay_dil_id" FromRole="tbl_haber_detay" ToRole="tbl_dil" />
+    <NavigationProperty Name="tbl_haber" Relationship="MySQLDataModel.fk_haber_detay_haber_id" FromRole="tbl_haber_detay" ToRole="tbl_haber" />
+  </EntityType>
+  <EntityType Name="tbl_maillist_gonderilen">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="taslak_id" />
+    <Property Type="Int32" Name="mail_id" />
+    <Property Type="Int32" Name="admin_id" />
+    <Property Type="DateTime" Name="tarih" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_maillist_gonderilen_admin_id" FromRole="tbl_maillist_gonderilen" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_maillist_mail" Relationship="MySQLDataModel.fk_maillist_gonderilen_mail_id" FromRole="tbl_maillist_gonderilen" ToRole="tbl_maillist_mail" />
+    <NavigationProperty Name="tbl_maillist_taslak" Relationship="MySQLDataModel.fk_maillist_gonderilen_taslak_id" FromRole="tbl_maillist_gonderilen" ToRole="tbl_maillist_taslak" />
+  </EntityType>
+  <EntityType Name="tbl_maillist_mail">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="ad" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mail" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="tip" Nullable="false" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_maillist_mail_admin_id_ek" FromRole="tbl_maillist_mail" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_maillist_mail_admin_id_gun" FromRole="tbl_maillist_mail" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_maillist_gonderilen" Relationship="MySQLDataModel.fk_maillist_gonderilen_mail_id" FromRole="tbl_maillist_mail" ToRole="tbl_maillist_gonderilen" />
+  </EntityType>
+  <EntityType Name="tbl_maillist_taslak">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="baslik" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="mail" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_maillist_taslak_admin_id_ek" FromRole="tbl_maillist_taslak" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_maillist_taslak_admin_id_gun" FromRole="tbl_maillist_taslak" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_maillist_gonderilen" Relationship="MySQLDataModel.fk_maillist_gonderilen_taslak_id" FromRole="tbl_maillist_taslak" ToRole="tbl_maillist_gonderilen" />
+  </EntityType>
+  <EntityType Name="tbl_manset">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="baslik" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="dosya_ad" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="son_gosterim_tarih" />
+    <Property Type="String" Name="url" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="sira" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_manset_admin_id_ek" FromRole="tbl_manset" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_manset_admin_id_gun" FromRole="tbl_manset" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_manset_detay" Relationship="MySQLDataModel.fk_manset_detay_manset_id" FromRole="tbl_manset" ToRole="tbl_manset_detay" />
+  </EntityType>
+  <EntityType Name="tbl_manset_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="manset_id" Nullable="false" />
+    <Property Type="Int32" Name="dil_id" Nullable="false" />
+    <Property Type="String" Name="baslik" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="url" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="onay" />
+    <Property Type="Int32" Name="admin_id" />
+    <Property Type="DateTime" Name="tarih" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_manset_detay_admin_id" FromRole="tbl_manset_detay" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_dil" Relationship="MySQLDataModel.fk_manset_detay_dil_id" FromRole="tbl_manset_detay" ToRole="tbl_dil" />
+    <NavigationProperty Name="tbl_manset" Relationship="MySQLDataModel.fk_manset_detay_manset_id" FromRole="tbl_manset_detay" ToRole="tbl_manset" />
+  </EntityType>
+  <EntityType Name="tbl_menu">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="ust_menu_id" Nullable="false" />
+    <Property Type="String" Name="baslik" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="tur" Nullable="false" />
+    <Property Type="String" Name="url" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Int32" Name="sira" Nullable="false" />
+    <Property Type="Boolean" Name="acilan_menu" Nullable="false" />
+    <Property Type="Int32" Name="foto_galeri_id" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_menu_admin_id_ek" FromRole="tbl_menu" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_menu_admin_id_gun" FromRole="tbl_menu" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_foto_galeri" Relationship="MySQLDataModel.fk_menu_foto_galeri_id" FromRole="tbl_menu" ToRole="tbl_foto_galeri" />
+    <NavigationProperty Name="tbl_menu_detay" Relationship="MySQLDataModel.fk_menu_detay_menu_id" FromRole="tbl_menu" ToRole="tbl_menu_detay" />
+  </EntityType>
+  <EntityType Name="tbl_menu_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="menu_id" Nullable="false" />
+    <Property Type="Int32" Name="dil_id" Nullable="false" />
+    <Property Type="String" Name="baslik" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="detay" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_aciklama" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_anahtar" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="tarih_ek" Nullable="false" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_dil" Relationship="MySQLDataModel.fk_menu_detay_dil_id" FromRole="tbl_menu_detay" ToRole="tbl_dil" />
+    <NavigationProperty Name="tbl_menu" Relationship="MySQLDataModel.fk_menu_detay_menu_id" FromRole="tbl_menu_detay" ToRole="tbl_menu" />
+  </EntityType>
+  <EntityType Name="tbl_resimler">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="tip_id" Nullable="false" />
+    <Property Type="Int32" Name="tip" Nullable="false" />
+    <Property Type="String" Name="dosya_ad" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="varsayilan" Nullable="false" />
+    <Property Type="Int32" Name="resim_tip" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_resimler_admin_id_ek" FromRole="tbl_resimler" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_resimler_admin_id_gun" FromRole="tbl_resimler" ToRole="tbl_admin" />
+  </EntityType>
+  <EntityType Name="tbl_text">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="baslik" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="sayfa" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="xml" Nullable="false" />
+    <Property Type="Int32" Name="admin_id" />
+    <Property Type="DateTime" Name="tarih" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_text_admin_id" FromRole="tbl_text" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_text_detay" Relationship="MySQLDataModel.fk_text_detay_text_id" FromRole="tbl_text" ToRole="tbl_text_detay" />
+  </EntityType>
+  <EntityType Name="tbl_text_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="dil_id" Nullable="false" />
+    <Property Type="Int32" Name="text_id" Nullable="false" />
+    <Property Type="String" Name="baslik" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="tbl_dil" Relationship="MySQLDataModel.fk_text_detay_dil_id" FromRole="tbl_text_detay" ToRole="tbl_dil" />
+    <NavigationProperty Name="tbl_text" Relationship="MySQLDataModel.fk_text_detay_text_id" FromRole="tbl_text_detay" ToRole="tbl_text" />
+  </EntityType>
+  <EntityType Name="tbl_video_galeri">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="String" Name="baslik" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="dosya_ad" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="video" MaxLength="500" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="onay" Nullable="false" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_video_galeri_admin_id_ek" FromRole="tbl_video_galeri" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_video_galeri_admin_id_gun" FromRole="tbl_video_galeri" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_video_galeri_detay" Relationship="MySQLDataModel.fk_video_galeri_detay_video_galeri_id" FromRole="tbl_video_galeri" ToRole="tbl_video_galeri_detay" />
+  </EntityType>
+  <EntityType Name="tbl_video_galeri_detay">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="video_galeri_id" />
+    <Property Type="Int32" Name="dil_id" />
+    <Property Type="String" Name="baslik" MaxLength="255" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_anahtar" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="seo_aciklama" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_dil" Relationship="MySQLDataModel.fk_video_galeri_detay_dil_id" FromRole="tbl_video_galeri_detay" ToRole="tbl_dil" />
+    <NavigationProperty Name="tbl_video_galeri" Relationship="MySQLDataModel.fk_video_galeri_detay_video_galeri_id" FromRole="tbl_video_galeri_detay" ToRole="tbl_video_galeri" />
+  </EntityType>
+  <EntityType Name="tbl_videolar">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Type="Int32" Name="id" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Type="Int32" Name="tip_id" />
+    <Property Type="Int32" Name="tip" />
+    <Property Type="String" Name="site" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="String" Name="url" MaxLength="65535" FixedLength="false" Unicode="false" />
+    <Property Type="Boolean" Name="onay" />
+    <Property Type="Int32" Name="admin_id_ek" />
+    <Property Type="DateTime" Name="tarih_ek" />
+    <Property Type="Int32" Name="admin_id_gun" />
+    <Property Type="DateTime" Name="tarih_gun" />
+    <NavigationProperty Name="tbl_admin" Relationship="MySQLDataModel.fk_videolar_admin_id_ek" FromRole="tbl_videolar" ToRole="tbl_admin" />
+    <NavigationProperty Name="tbl_admin1" Relationship="MySQLDataModel.fk_videolar_admin_id_gun" FromRole="tbl_videolar" ToRole="tbl_admin" />
+  </EntityType>
+  <Association Name="fk_admin_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_admin1">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_admin_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin1" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_admin1">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_ayar_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_ayar" Role="tbl_ayar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_ayar">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_dil_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_dil" Role="tbl_dil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_dil">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_dil_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_dil" Role="tbl_dil" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_dil">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_foto_galeri_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_foto_galeri" Role="tbl_foto_galeri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_foto_galeri">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_foto_galeri_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_foto_galeri" Role="tbl_foto_galeri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_foto_galeri">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_haber_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_haber" Role="tbl_haber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_haber">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_haber_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_haber" Role="tbl_haber" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_haber">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_gonderilen_admin_id">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_maillist_gonderilen" Role="tbl_maillist_gonderilen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_gonderilen">
+        <PropertyRef Name="admin_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_mail_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_maillist_mail" Role="tbl_maillist_mail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_mail">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_mail_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_maillist_mail" Role="tbl_maillist_mail" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_mail">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_taslak_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_maillist_taslak" Role="tbl_maillist_taslak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_taslak">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_taslak_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_maillist_taslak" Role="tbl_maillist_taslak" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_taslak">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_manset" Role="tbl_manset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_manset" Role="tbl_manset" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_detay_admin_id">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_manset_detay" Role="tbl_manset_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset_detay">
+        <PropertyRef Name="admin_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_menu" Role="tbl_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_menu" Role="tbl_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_resimler_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_resimler" Role="tbl_resimler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_resimler">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_resimler_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_resimler" Role="tbl_resimler" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_resimler">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_text_admin_id">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_text" Role="tbl_text" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_text">
+        <PropertyRef Name="admin_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_video_galeri_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_video_galeri" Role="tbl_video_galeri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_video_galeri">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_video_galeri_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_video_galeri" Role="tbl_video_galeri" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_video_galeri">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_videolar_admin_id_ek">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_videolar" Role="tbl_videolar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_videolar">
+        <PropertyRef Name="admin_id_ek" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_videolar_admin_id_gun">
+    <End Type="MySQLDataModel.tbl_admin" Role="tbl_admin" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_videolar" Role="tbl_videolar" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_admin">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_videolar">
+        <PropertyRef Name="admin_id_gun" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_foto_galeri_detay_dil_id">
+    <End Type="MySQLDataModel.tbl_dil" Role="tbl_dil" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_foto_galeri_detay" Role="tbl_foto_galeri_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_foto_galeri_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_haber_detay_dil_id">
+    <End Type="MySQLDataModel.tbl_dil" Role="tbl_dil" Multiplicity="1" />
+    <End Type="MySQLDataModel.tbl_haber_detay" Role="tbl_haber_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_haber_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_detay_dil_id">
+    <End Type="MySQLDataModel.tbl_dil" Role="tbl_dil" Multiplicity="1" />
+    <End Type="MySQLDataModel.tbl_manset_detay" Role="tbl_manset_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_detay_dil_id">
+    <End Type="MySQLDataModel.tbl_dil" Role="tbl_dil" Multiplicity="1" />
+    <End Type="MySQLDataModel.tbl_menu_detay" Role="tbl_menu_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_text_detay_dil_id">
+    <End Type="MySQLDataModel.tbl_dil" Role="tbl_dil" Multiplicity="1" />
+    <End Type="MySQLDataModel.tbl_text_detay" Role="tbl_text_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_text_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_video_galeri_detay_dil_id">
+    <End Type="MySQLDataModel.tbl_dil" Role="tbl_dil" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_video_galeri_detay" Role="tbl_video_galeri_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_dil">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_video_galeri_detay">
+        <PropertyRef Name="dil_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_foto_galeri_detay_galeri_id">
+    <End Type="MySQLDataModel.tbl_foto_galeri" Role="tbl_foto_galeri" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_foto_galeri_detay" Role="tbl_foto_galeri_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_foto_galeri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_foto_galeri_detay">
+        <PropertyRef Name="galeri_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_foto_galeri_id">
+    <End Type="MySQLDataModel.tbl_foto_galeri" Role="tbl_foto_galeri" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_menu" Role="tbl_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_foto_galeri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu">
+        <PropertyRef Name="foto_galeri_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_haber_detay_haber_id">
+    <End Type="MySQLDataModel.tbl_haber" Role="tbl_haber" Multiplicity="1" />
+    <End Type="MySQLDataModel.tbl_haber_detay" Role="tbl_haber_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_haber">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_haber_detay">
+        <PropertyRef Name="haber_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_gonderilen_mail_id">
+    <End Type="MySQLDataModel.tbl_maillist_mail" Role="tbl_maillist_mail" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_maillist_gonderilen" Role="tbl_maillist_gonderilen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_maillist_mail">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_gonderilen">
+        <PropertyRef Name="mail_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_maillist_gonderilen_taslak_id">
+    <End Type="MySQLDataModel.tbl_maillist_taslak" Role="tbl_maillist_taslak" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_maillist_gonderilen" Role="tbl_maillist_gonderilen" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_maillist_taslak">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_maillist_gonderilen">
+        <PropertyRef Name="taslak_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_manset_detay_manset_id">
+    <End Type="MySQLDataModel.tbl_manset" Role="tbl_manset" Multiplicity="1" />
+    <End Type="MySQLDataModel.tbl_manset_detay" Role="tbl_manset_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_manset">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_manset_detay">
+        <PropertyRef Name="manset_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_menu_detay_menu_id">
+    <End Type="MySQLDataModel.tbl_menu" Role="tbl_menu" Multiplicity="1" />
+    <End Type="MySQLDataModel.tbl_menu_detay" Role="tbl_menu_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_menu">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_menu_detay">
+        <PropertyRef Name="menu_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_text_detay_text_id">
+    <End Type="MySQLDataModel.tbl_text" Role="tbl_text" Multiplicity="1" />
+    <End Type="MySQLDataModel.tbl_text_detay" Role="tbl_text_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_text">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_text_detay">
+        <PropertyRef Name="text_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_video_galeri_detay_video_galeri_id">
+    <End Type="MySQLDataModel.tbl_video_galeri" Role="tbl_video_galeri" Multiplicity="0..1" />
+    <End Type="MySQLDataModel.tbl_video_galeri_detay" Role="tbl_video_galeri_detay" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="tbl_video_galeri">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="tbl_video_galeri_detay">
+        <PropertyRef Name="video_galeri_id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>
